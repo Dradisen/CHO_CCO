@@ -1,0 +1,123 @@
+@import "../colors.less";
+
+.section{
+    height: 100vh;
+    min-height: 660px;
+    position: relative;
+
+    &__main{
+        background: url("../img/1.main/fern.png") @color_light_blue bottom right no-repeat;
+    }
+
+    &__why-chocco{
+        background: url("../img/2.whyChokko/list.png" ) center left no-repeat;
+    }
+
+    &__slider{
+        background: @color_light;
+    }
+
+    &__menu{
+        background: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+                     url("../img/5.menu/menu-background.jpg") center center no-repeat;
+        background-size: cover;
+    }
+
+    &__video-works{
+        background: url('../img/7.video/list.png') @color_light center no-repeat;
+    }
+
+    &__order{
+        background: url("../img/8.order/background.png") center center no-repeat;
+        background-size: cover;   
+    }
+}
+
+.wrapper{
+    max-width: 940px;
+    margin: 0 auto;
+    height: 100%;
+}
+
+.decor{
+    position: absolute;
+    overflow: hidden;
+    pointer-events: none;
+
+    &-block{
+        &-1{
+            content: url("../img/1.main/berry.png" );
+            bottom: -45px;
+            right: 80px;
+            z-index: 10;
+        }
+        &-2{
+            content: url("../img/1.main/list-decor-1.png" );
+            bottom: -50px;
+            left: 40px;
+        }
+        &-3{
+            content: url("../img/1.main/list-decor-2.png" );
+            bottom: -50px;
+            right: 30px;
+        }
+        &-4{
+            content: url("../img/2.whyChokko/berry.png" );
+            bottom: -120px;
+            left: 0;
+            z-index: 20;
+        }
+
+        &-5{
+            content: url('../img/3.candys/fern.png');
+            bottom: -350px;
+            right: 0;
+        }
+
+        &-6{
+            content: url('../img/3.candys/berry.png');
+            bottom: -50px;
+            right: 50px;
+        }
+        &-7{
+            content: url('../img/4.Command/berry.png');
+            bottom: -50px;
+            left: 50px;
+            z-index: 20;           
+        }
+
+        &-8{
+            content: url('../img/6.review/berry-2.png');
+            top: 50px;
+            right: 50px;
+        }
+        &-9{
+            content: url('../img/6.review/list.png');
+            top: 0;
+            right: 0;            
+        }
+        &-10{
+            content: url('../img/6.review/ellips.svg');
+            top: 0px;
+            right: 43%;            
+        }
+        &-11{
+            content: url('../img/6.review/fern.png');
+            bottom: -130px;
+            left: 0;
+            z-index: 30;            
+        }
+        &-12{
+            content: url('../img/6.review/berry.png');
+            bottom: -125px;
+            left: 0;
+            z-index: 30;            
+        }
+        &-13{
+            content: url('../img/7.video/list-2.png');
+            bottom: -125px;
+            right: 0;
+            z-index: 10;
+        }
+    }
+}

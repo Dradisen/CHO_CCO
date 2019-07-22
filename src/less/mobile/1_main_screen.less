@@ -1,0 +1,132 @@
+@import "../colors.less";
+
+.header{
+    display: flex;
+    padding: 24px 0;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 24px;
+
+    &__logo{
+        margin: 0 20px 0 0;
+    }
+
+    &__menu{
+        position: fixed;
+        right: 15px;
+        z-index: 50;
+        background: @color_light_blue;
+        align-items: center;
+        display: flex;
+        padding: 5px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+}
+
+.phone{
+    display: none;
+    &:before{
+        content: url('../img/main/phone_.png');
+    }
+
+    &__number{
+        color: @color_white;
+        font-size: 24px;
+        font-weight: 400;
+        line-height: 30px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+}
+
+.nav{
+    flex-grow: 1;
+    align-self: self-end;
+    margin: 0 20px;
+    display: none;
+
+    &__items{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    &__item{
+        flex: 1 1 auto;
+    }
+
+    &__link{
+        color: @color_white;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        text-decoration: none;
+    }
+}
+
+.content{
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column-reverse;
+    margin: 0 auto 70px auto;
+
+    &__container{
+        margin: 0 10px;
+        flex: 1;
+    }
+
+    &__title{
+        color: @color_white;
+        font-size: 35px;
+        font-weight: 700;
+        line-height: 40px;
+        text-transform: uppercase;
+    }
+
+    &__desc{
+        color: @color_white;
+        font-size: 21px;
+        font-weight: 400;
+        margin: 20px 0 50px 0;
+    }
+
+    &__button{
+        color: @color_green;
+        background: @color_light;
+        font-size: 19px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    &__items{
+        margin: 40px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item{
+        display: block;
+        margin-right: 5px;
+    }
+
+    &__item-desc{
+        color: @color_white;
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 10px;
+    }
+
+    &__item-img{
+        max-width: 40px;
+        height: auto;
+    }
+    
+    &__img{
+        width:80%;
+        max-width: 100%;
+        z-index: 50;
+    }
+}

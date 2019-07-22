@@ -1,0 +1,60 @@
+@import "../colors.less";
+//----------------------------
+.chocco{
+    align-items: center;
+    //----------------------------
+    &__header{
+        width: 420px;
+        text-align: center;
+
+        &-title{
+            color: #0d0d0d;
+            font-size: 48px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 100px 0 0 0;
+        }
+
+        &-tease{
+            color: #666666;
+            font-size: 18px;
+            font-weight: 400;
+        }
+    }
+    //----------------------------
+    &__items{
+        padding: 100px 0 0 0;
+        display: flex;
+        width: 100%;
+    }
+    //----------------------------
+    &__item{
+        text-align: center;
+
+        &-img{
+            width: 125px;
+            height: 125px;
+            background-color: #f2f5f4;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 190px;
+            display: inline-block;
+        }
+        &-title{
+            color: #000000;
+            font-size: 27px;
+            font-weight: 700;
+            margin: 20px 0;
+        }
+        &-desc{
+            color: #666666;
+            font-size: 18px;
+            font-weight: 300;
+        }
+        &-splitter{
+            line-height: 150px;
+            min-width: 67px;
+        }
+    }
+    //----------------------------
+}

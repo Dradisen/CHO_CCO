@@ -1,0 +1,133 @@
+@import "../colors.less";
+
+.section{
+    position: relative;
+
+    &__main{
+        background: url("../img/1.main/fern.png") @color_light_blue center right no-repeat;
+    }
+
+    &__why-chocco{
+        background: url("../img/2.whyChokko/list.png" ) center left no-repeat;
+    }
+
+    &__slider{
+        background: @color_light;
+    }
+
+    &__menu{
+        background: linear-gradient(to right, rgba(0,0,0,0.2), rgba(0,0,0,0.2)),
+                     url("../img/5.menu/menu-background.jpg") center center no-repeat;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    &__video-works{
+        background: url('../img/7.video/list.png') @color_light center no-repeat;
+        padding-bottom: 70px;
+    }
+
+    &__order{
+        background: url("../img/8.order/background.png") center center no-repeat;
+        background-size: cover;   
+    }
+    
+}
+
+.wrapper{
+    max-width: 768px;
+}
+
+.container{
+    max-width: 70%;
+    margin: 0 auto 70px;
+}
+
+.decor{
+    position: absolute;
+    overflow: hidden;
+    pointer-events: none;
+
+    &-block-1{
+        content: url("../img/1.main/berry.png");
+        top: 32%;
+        right: 20%;
+        z-index: 30;
+        width: 40%;
+    }
+
+    &-block-2{
+        content: url("../img/1.main/list-decor-1.png" );
+        top: 20%;
+        left: 15%;
+    }
+
+    &-block-3{
+        content: url("../img/1.main/list-decor-2.png");
+        top: 28%;
+        right: 10%;
+        width: 50%;
+    }
+
+    &-block-4{
+        content: url("../img/2.whyChokko/berry.png" );
+        bottom: -120px;
+        left: 0;
+        z-index: 20;
+    }
+
+    &-block-5{
+        content: url('../img/3.candys/fern.png');
+        bottom: -350px;
+        right: 0;
+    }
+
+    &-block-6{
+        content: url('../img/3.candys/berry.png');
+        bottom: -50px;
+        right: 50px;
+    }
+
+    &-block-7{
+        content: url('../img/4.Command/berry.png');
+        bottom: -120px;
+        left: 50px;
+        z-index: 20;
+    }
+
+    &-block-8{
+        content: url('../img/6.review/berry-2.png');
+        top: 50px;
+        right: 50px;
+    }
+
+    &-block-9{
+        content: url('../img/6.review/list.png');
+        top: 0;
+        right: 0;
+    }
+
+    &-block-10{
+        content: url('../img/6.review/ellips.svg');
+        top: 0px;
+        right: 43%;
+    }
+
+    &-block-11{
+        content: url('../img/6.review/fern.png');
+        bottom: -130px;
+        left: 0;
+        z-index: 30;
+        width: 100px;
+    }
+
+    &-block-12{
+        content: url('../img/6.review/berry.png');
+        bottom: -125px;
+        left: 0;
+        z-index: 30;
+        width: 120px;
+    }
+
+    
+}

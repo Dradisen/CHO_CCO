@@ -1,0 +1,105 @@
+@import "../colors.less";
+
+.header{
+    display: flex;
+    padding: 24px 0;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 0 24px;
+
+    //----------------------------
+    &-nav{
+        flex-grow: 1;
+        margin: 0 20px;
+        display: none;
+
+        &__items{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        &__item{
+            flex: 1 1 auto;
+        }
+        &__link{
+            color: @color_white;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 30px;
+            text-decoration: none;
+        }
+        &__phone{
+            display: none;
+            &:before{
+                content: url('../img/1.main/phone_.png');
+                margin-right: 5px;
+            }
+            color: @color_white;
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 30px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+}
+
+//----------------------------
+.content{
+    display: flex;
+    flex-grow: .6;
+    align-items: center;
+    flex-direction: column-reverse;
+
+    &__main{
+        margin: 0 10px;
+        flex: 1;
+        text-align: center;
+    }
+    &__title{
+        color: @color_white;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 60px;
+        text-transform: uppercase;
+    }
+    &__desc{
+        color: @color_white;
+        font-size: 21px;
+        font-weight: 400;
+        margin: 20px 0 50px 0;
+    }
+    &__button{
+        color: @color_green;
+        background: @color_light;
+        font-size: 19px;
+        font-weight: 500;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+    &__items{
+        margin: 40px 0 0 0;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        display: flex;
+        margin-right: 5px;
+        
+        &-desc{
+            color: @color_white;
+            font-size: 16px;
+            font-weight: 400;
+            margin-left: 10px;
+        }
+        &-img{
+            max-width: 50px;
+            height: 50px;
+        }
+    
+    }
+    &__img{
+        width:100%;
+        max-width: 100%;
+    }
+}

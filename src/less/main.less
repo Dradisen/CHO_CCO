@@ -1,0 +1,20 @@
+@import "smart-grid.less";
+@import "common/common.less";
+
+.reset();
+
+
+@media screen and (min-width: 768px){
+    @import "common/common_desktop.less";
+    @import "desktop.less";
+}
+
+@media screen and (max-width: 768px){
+    @import "common/common_tablet.less";
+    @import "tablet.less";
+}
+
+@media screen and (max-width: 480px){
+    @import "common/common_mobile.less";
+    @import "mobile.less";
+}

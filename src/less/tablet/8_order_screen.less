@@ -1,0 +1,142 @@
+@import "../colors.less";
+input{
+    height: 60px;
+    box-sizing: border-box;
+    border: 0;
+}
+
+
+textarea{
+    resize: none;
+    border: 0;
+}
+
+.order{
+    &__title{
+        color: @color_green;
+        font-size: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 40px 0;
+    }
+    &__label{
+        color: @color_green;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30.05px;
+    }
+
+    &__radio-label{
+        color: @color_green;
+        font-family: "Alegreya Sans";
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30.05px;
+    }
+
+    
+    &__radio-button{
+        display: none;
+    }
+    &__checkbox-button{
+        display: none;
+    }
+
+    &__radio-fake{
+        width: 25px;
+        height: 25px;
+        background: @color_white;
+        position: relative;
+    }
+
+    &__checkbox-fake{
+        width: 25px;
+        height: 25px;
+        background: @color_white;
+        position: relative;
+    }
+    
+    &__radio-fake, &__radio-label, &__checkbox-fake{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    &__radio-button:checked + &__radio-fake::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        bottom: 5px;
+        left: 5px;
+        background: @color_green;
+        border-radius: 2px; 
+    }
+
+    &__checkbox-button:checked + &__checkbox-fake::before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        bottom: 5px;
+        left: 5px;
+        background: @color_green;
+        border-radius: 2px;
+    }
+
+    &__radio-fake,
+    &__radio-button:checked + &__radio-fake::before{
+	    border-radius: 50%;
+    }
+
+    &__container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__form-container{
+        display: flex;
+    }
+
+    &__form-radio{
+        margin-right: 20px;
+    }
+
+    &__form-block{
+        display: flex;
+        flex-grow: 1;
+        flex-direction: column;
+        margin: 20px 10px 0 10px;
+        min-width: 0px;
+        &-radio{
+            margin: 20px 10px 0 10px;
+            display: flex;
+            flex-flow: row wrap;
+        }
+    }
+    &__input-street{
+        flex-grow: 1;
+    }
+    &__input-phone{
+        
+    }
+    &__input-address{
+        min-width: 0px;
+    }
+    &__comments{
+       height: 200px;
+    }
+
+    &__btn-order{
+        margin: 40px 0 0 0;
+        background: @color_green;
+        a{
+            color: @color_white;
+            font-size: 19px;
+            font-weight: 400;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+
+}

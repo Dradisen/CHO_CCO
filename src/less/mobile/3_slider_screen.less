@@ -1,0 +1,113 @@
+@import "../colors.less";
+
+.slider{
+    justify-content: center;
+
+    &__container{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin: 70px auto;
+        text-align: center;
+        overflow: hidden;
+        max-width: 100%;
+    }
+
+    &__items{
+        display: flex;
+        max-width: 100%;
+        transition: transform 0.6s ease;
+    }
+
+    &__item{
+        flex-direction: column;
+        display: flex;
+        flex: 0 0 100%;
+        margin: 70px 0;
+    }
+
+    &__img{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    &__title{
+        color: #0d0d0d;
+        font-size: 36px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &__subtitle{
+        color: #323232;
+        font-size: 24px;
+        font-weight: 500;
+        margin: 20px 0;
+    }
+
+    &__description{}
+
+    &__desc{
+        color: #666666;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    &__footer{
+        display: flex;
+        justify-content: center;
+    }
+
+    &__price{
+        color: #0d0d0d;
+        font-size: 35px;
+        font-weight: 300;
+        line-height: 60px;
+        text-transform: uppercase;
+        text-decoration: none;
+    }
+
+    &__button{
+        align-self: last baseline;
+        color: @color_light;
+        background: @color_green;
+        font-size: 19px;
+        font-weight: 400;
+        text-transform: uppercase;
+    }
+
+    &__meta{
+        display: flex;
+        margin: 40px 0;
+    }
+
+    &__title-meta{
+        color: #333333;
+        font-size: 18px;
+        font-weight: 400;
+    }
+
+    &__info-meta{
+        color: #333333;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    &__meta-item{
+        flex: 1 1 auto;
+    }
+
+    &__control-right{
+        display: flex;
+        position: absolute;
+        top: 50%;
+        right: 0px;
+    }
+
+    &__control-left{
+        display: flex;
+        position: absolute;
+        top: 50%;
+        left: 0px;
+    }
+}

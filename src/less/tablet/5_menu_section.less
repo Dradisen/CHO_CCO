@@ -1,0 +1,68 @@
+@import "../colors.less";
+.menu{
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+
+    &__title{
+        position: absolute;
+        top: 60px;
+        left: 100px;
+        color: @color_white;
+        font-size: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &__items{
+        height: 100%;
+        display: flex;
+        max-width: 100%;
+        z-index: 10;
+    }
+
+    &__item{
+        &:nth-child(1){
+            background:linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                         url("../img/5.menu/cocos.jpg") center left no-repeat;
+            background-size: cover;
+        }
+        &:nth-child(2){
+            background:linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                         url("../img/5.menu/menu-acco2.jpg") center center no-repeat;
+            background-size: cover;
+        }
+        &:nth-child(3){
+            background:linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)),
+                         url("../img/5.menu/menu-acco3.jpg") center center no-repeat;
+            background-size: cover;
+        }
+        top: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+
+    &__category{
+        transform: rotate(-90deg);
+        align-self: flex-end;
+        color: @color_white;
+        font-size: 48px;
+        font-weight: 500;
+        max-width: 100px;
+        white-space: nowrap;
+        transform-origin: 22px 0px;
+    }
+
+    &__desc{
+        display: none;
+        padding: 60px 40px;
+        color: @color_white;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23.97px;
+        background-color: #2f3234;
+        opacity: 0.93;
+    }
+}

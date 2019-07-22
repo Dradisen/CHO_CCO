@@ -1,0 +1,55 @@
+@import "../colors.less";
+.command{
+
+    &__title{
+        color: #0d0d0d;
+        font-size: 48px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &__img{
+        max-width: 100%;
+    }
+
+    &__name{
+        color: #323232;
+        font-size: 21px;
+        font-weight: 500;
+    }
+
+    &__profession{
+        color: #281e1e;
+        font-size: 18px;
+        font-weight: 400;
+        margin: 5px 0;
+    }
+
+    &__desc{
+        color: #666666;
+        font-size: 18px;
+        font-weight: 300;
+    }
+
+    &__items{
+
+        li:nth-child(even){
+            margin: 50px 10px 0 10px;
+        }
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+
+    }
+
+    &__item{
+        b::after{
+            content: url("../img/4.Command/arrow.svg");
+            margin-left: 5px;
+        }
+        margin: 0 10px;
+        width: 223px;
+        text-align: center;
+    }
+}
